@@ -91,8 +91,8 @@
                 <div class="shopping_cart">
                     <div class="cart">
                         <a href="<?php echo base_url('cart'); ?>" title="View my shopping cart" rel="nofollow">
-                            <span class="cart_title">Cart</span>
-                            <span class="no_product">(<?php echo $this->cart->total_items(); ?> Items)</span>
+                            <span class="cart_title">Keranjang</span>
+                            <span class="no_product">(<?php echo $this->cart->total_items(); ?> Item)</span>
                         </a>
                     </div>
                 </div>
@@ -100,7 +100,7 @@
                 $customer_id = $this->session->userdata('customer_id');
                 if ($customer_id) {
                 ?>
-                    <div class="login"><a href="<?php echo base_url('/customer/logout'); ?>">Logout</a></div>
+                    <div class="login"><a href="<?php echo base_url('/customer/logout'); ?>">Keluar</a></div>
                 <?php } else {
                 ?>
                     <!--<div class="login"><a href="<?php echo base_url('/customer/login'); ?>">login</a></div>-->
