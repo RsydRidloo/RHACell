@@ -9,9 +9,9 @@
                     <h2><?php echo $get_single_product->product_title ?></h2>
                     <p><?php echo $get_single_product->product_short_description ?></p>
                     <div class="price">
-                        <p>Price: <span>Rp<?php echo $this->cart->format_number($get_single_product->product_price) ?></span></p>
-                        <p>Category: <span><?php echo $get_single_product->category_name ?></span></p>
-                        <p>Brand:<span><?php echo $get_single_product->brand_name ?></span></p>
+                        <p>Harga: <span>Rp<?php echo $this->cart->format_number($get_single_product->product_price) ?></span></p>
+                        <p>Kategori: <span><?php echo $get_single_product->category_name ?></span></p>
+                        <p>Merk:<span><?php echo $get_single_product->brand_name ?></span></p>
                     </div>
                     <div class="add-cart">
                         <form action="<?php echo base_url('save/cart'); ?>" method="post">
