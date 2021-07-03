@@ -2,9 +2,6 @@
     <div class="content">
         <div class="support">
             <div class="support_desc">
-                <h3><?php echo get_option('contact_title'); ?></h3>
-                <p><?php echo get_option('contact_subtitle'); ?></p>
-                <p><?php echo get_option('contact_description'); ?></p>
             </div>
             <div class="clear"></div>
         </div>
