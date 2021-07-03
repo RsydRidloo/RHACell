@@ -8,7 +8,7 @@
             <a href="<?php echo base_url('dashboard') ?>">Home</a>
             <i class="icon-angle-right"></i>
         </li>
-        <li><a href="<?php echo base_url('manage/product') ?>">Manage Product</a></li>
+        <li><a href="<?php echo base_url('manage/product') ?>">Kelola Produk</a></li>
     </ul>
 
     <div class="row-fluid sortable">
