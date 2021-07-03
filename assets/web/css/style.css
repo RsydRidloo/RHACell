@@ -242,7 +242,7 @@ body {
 	top: 0;
 }
 .search_box input[type="submit"]:hover {
-	background: #00faed;
+	background: #038ece;
 }
 .shopping_cart {
 	float: left;
@@ -1302,8 +1302,8 @@ button.grey:hover,
 }
 .span_3_of_2 .button a:hover,
 .product-tags .button a:hover {
-	border: 1px solid #303030;
-	background: #525252;
+	border: 1px solid #038ece;
+	background: #038ece;
 	text-decoration: none;
 }
 .span_3_of_1 li a {
