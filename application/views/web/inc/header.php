@@ -29,29 +29,29 @@
 <body>
     <div class="wrap">
         <div class="menu">
-            <ul id="dc_mega-menu-orange" style="float:left" class="dc_mm-orange">
-                <li class="<?php
-                            if ($this->uri->uri_string() == '') {
-                                echo "active";
-                            }
-                            ?>"><a href="<?php echo base_url('/'); ?>">Home</a></li>
+            <ul id="dc_mega-menu-orange" style="float:left;color:#00faed;" class=" dc_mm-orange">
+                <!-- <li class="<?php
+                                if ($this->uri->uri_string() == '') {
+                                    echo "active";
+                                }
+                                ?>"><a href="<?php echo base_url('/'); ?>">Home</a></li> -->
                 <li class="<?php
                             if ($this->uri->uri_string() == 'product') {
                                 echo "active";
                             }
-                            ?>"><a href="<?php echo base_url('/product'); ?>">Products</a> </li>
+                            ?>"><a href="<?php echo base_url('/product'); ?>">Produk</a> </li>
                 <?php if ($this->cart->total_items()) { ?>
                     <li class="<?php
                                 if ($this->uri->uri_string() == 'cart') {
                                     echo "active";
                                 }
-                                ?>"><a href="<?php echo base_url('/cart'); ?>">Cart</a></li>
+                                ?>"><a href="<?php echo base_url('/cart'); ?>">Keranjang</a></li>
                 <?php } ?>
                 <li class="<?php
                             if ($this->uri->uri_string() == 'contact') {
                                 echo "active";
                             }
-                            ?>"><a href="<?php echo base_url('/contact'); ?>">Contact</a> </li>
+                            ?>"><a href="<?php echo base_url('/contact'); ?>">Kontak</a> </li>
 
                 <?php if (!$this->session->userdata('customer_id')) { ?>
 
@@ -59,12 +59,12 @@
                                 if ($this->uri->uri_string() == 'customer/login') {
                                     echo "active";
                                 }
-                                ?>"><a href="<?php echo base_url('/customer/login'); ?>">Login</a> </li>
+                                ?>"><a href="<?php echo base_url('/customer/login'); ?>">Masuk</a> </li>
                     <li class="<?php
                                 if ($this->uri->uri_string() == 'customer/register') {
                                     echo "active";
                                 }
-                                ?>"><a href="<?php echo base_url('/customer/register'); ?>">Register</a> </li>
+                                ?>"><a href="<?php echo base_url('/customer/register'); ?>">Daftar</a> </li>
 
                 <?php } ?>
                 <br>

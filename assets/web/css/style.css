@@ -242,7 +242,7 @@ body {
 	top: 0;
 }
 .search_box input[type="submit"]:hover {
-	background: #444;
+	background: #00faed;
 }
 .shopping_cart {
 	float: left;
@@ -319,7 +319,7 @@ input[type="number"] {
 		scroll 0 0;
 	border: 1px solid #cecece;
 	box-sizing: border-box;
-	color: #444;
+	color: #00faed;
 	display: block;
 	float: left;
 	font-size: 27px;
@@ -1707,7 +1707,7 @@ table.tblone img {
 .contact-form span {
 	display: block;
 	font-size: 0.8125em;
-	color: #757575;
+	color: #00faed;
 	padding-bottom: 5px;
 	font-family: verdana, arial, helvetica, helve, sans-serif;
 }
@@ -1740,7 +1740,7 @@ table.tblone img {
 	position: absolute;
 	right: 0;
 	border: 1px solid #ccc;
-	color: #555 !important;
+	color: #00faed !important;
 	font-size: 1em;
 	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
 }
@@ -2752,6 +2752,6 @@ table.tblone img {
 }
 
 html body li.active a {
-	background: #542878;
+	background: #00faed;
 	border-left: 0px !important;
 }
