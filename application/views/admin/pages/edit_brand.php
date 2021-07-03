@@ -5,12 +5,12 @@
     <ul class="breadcrumb">
         <li>
             <i class="icon-home"></i>
-            <a href="<?php echo base_url('dashboard')?>">Home</a>
-            <i class="icon-angle-right"></i> 
+            <a href="<?php echo base_url('dashboard') ?>">Home</a>
+            <i class="icon-angle-right"></i>
         </li>
         <li>
             <i class="icon-edit"></i>
-            <a href="<?php echo base_url('edit/brand/'.$brand_info_by_id->brand_id)?>">Edit Brand</a>
+            <a href="<?php echo base_url('edit/brand/' . $brand_info_by_id->brand_id) ?>">Edit Brand</a>
         </li>
     </ul>
 
@@ -25,54 +25,63 @@
                 </div>
             </div>
             <style type="text/css">
-                #result{color:red;padding: 5px}
-                #result p{color:red}
+                #result {
+                    color: red;
+                    padding: 5px
+                }
+
+                #result p {
+                    color: red
+                }
             </style>
             <div id="result">
-                <p><?php echo $this->session->flashdata('message');?></p>
+                <p><?php echo $this->session->flashdata('message'); ?></p>
             </div>
             <div class="box-content">
-                <form class="form-horizontal" action="<?php echo base_url('update/brand/'.$brand_info_by_id->brand_id)?>" method="post">
+                <form class="form-horizontal" action="<?php echo base_url('update/brand/' . $brand_info_by_id->brand_id) ?>" method="post">
                     <fieldset>
 
                         <div class="control-group">
-                            <label class="control-label" for="fileInput">Brand Name</label>
+                            <label class="control-label" for="fileInput">Nama Brand</label>
                             <div class="controls">
-                                <input value="<?php echo $brand_info_by_id->brand_name?>" class="span6 typeahead" name="brand_name" id="fileInput" type="text"/>
+                                <input value="<?php echo $brand_info_by_id->brand_name ?>" class="span6 typeahead" name="brand_name" id="fileInput" type="text" />
                             </div>
-                        </div>          
+                        </div>
                         <div class="control-group">
-                            <label class="control-label" for="textarea2">Brand Description</label>
+                            <label class="control-label" for="textarea2">Deskripsi Brand</label>
                             <div class="controls">
                                 <textarea class="cleditor" id="textarea2" name="brand_description" rows="3">
-                                    <?php echo $brand_info_by_id->brand_description;?>
+                                    <?php echo $brand_info_by_id->brand_description; ?>
                                 </textarea>
                             </div>
                         </div>
-                        
+
                         <div class="control-group">
-                            <label class="control-label" for="textarea2">Publication Status</label>
+                            <label class="control-label" for="textarea2">Status Publikasi</label>
                             <div class="controls">
                                 <select name="publication_status">
-                                    <option value="1">Published</option>
-                                    <option value="0">UnPublished</option>
+                                    <option value="1">Sudah Publis</option>
+                                    <option value="0">Belum Publis</option>
                                 </select>
                             </div>
                         </div>
-                        
+
                         <div class="form-actions">
-                            <button type="submit" class="btn btn-primary">Save changes</button>
-                            <button type="reset" class="btn">Cancel</button>
+                            <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
+                            <button type="reset" class="btn">Batalkan</button>
                         </div>
                     </fieldset>
-                </form>   
+                </form>
 
             </div>
-        </div><!--/span-->
+        </div>
+        <!--/span-->
 
-    </div><!--/row-->
+    </div>
+    <!--/row-->
 
 
-</div><!--/.fluid-container-->
+</div>
+<!--/.fluid-container-->
 
 <!-- end: Content -->
