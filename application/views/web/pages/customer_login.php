@@ -1,8 +1,8 @@
 <div class="main">
     <div class="content" style="text-align: center">
         <div class="login_panel" style="width:400px;text-align:center;display:inline-block;float: none">
-            <h3>Existing Customers</h3>
-            <p>Sign in with the form below.</p>
+            <h3>Masuk</h3>
+            <p>Masuk dengan formulir di bawah ini.</p>
             <style type="text/css">
                 #result {
                     color: red;
