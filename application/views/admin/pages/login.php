@@ -40,7 +40,7 @@
 
     <style type="text/css">
         body {
-            background: url(<?php echo base_url() ?>assets/admin/img/bg-login.jpg) !important;
+            background: url(<?php echo base_url() ?>assets/admin/img/bg-login.jpg) !important
         }
     </style>
 
