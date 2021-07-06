@@ -61,9 +61,9 @@
                                 <td><?php echo $single_order->customer_email ?></td>
                                 <td>Rp<?php echo $this->cart->format_number($single_order->order_total) ?></td>
                                 <td>
-                                    <a class="btn btn-warning"><?php echo $single_order->actions ?></a>
-                                    <a class="btn btn-danger" href="<?php echo base_url('order/details/' . $single_order->order_id); ?>">Lihat</a>
-                                    <a class="btn btn-success" href="<?php echo base_url('web/pdf/' . $single_order->order_id); ?>">Download</a>
+                                    <!-- <a class="btn btn-warning"><?php echo $single_order->actions ?></a> -->
+                                    <a class="btn btn-primary" href="<?php echo base_url('order/details/' . $single_order->order_id); ?>">Lihat</a>
+
                                 </td>
                             </tr>
                         <?php } ?>
