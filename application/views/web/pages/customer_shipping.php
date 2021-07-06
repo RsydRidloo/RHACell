@@ -24,9 +24,6 @@
                                     <input type="text" name="shipping_name" placeholder="Nama Penerima">
                                 </div>
                                 <div>
-                                    <input type="text" name="shipping_zipcode" placeholder="Kode Pos">
-                                </div>
-                                <div>
                                     <input type="text" name="shipping_address" placeholder="Masukkan Alamat">
                                 </div>
                             </td>

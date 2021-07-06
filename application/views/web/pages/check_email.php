@@ -1,7 +1,7 @@
 <div class="main">
     <div class="content" style="text-align: center">
         <div class="register_account" style="text-align:center;display:inline-block;float: none">
-            <h3>Konfirmasi Pengiriman</h3>
+            <h3>Konfirmasi Pengiriman cek</h3>
             <form>
                 <table>
                     <tbody>

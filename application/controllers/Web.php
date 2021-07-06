@@ -307,7 +307,7 @@ class Web extends CI_Controller
         $data['shipping_zipcode'] = $this->input->post('shipping_zipcode');
 
         $this->form_validation->set_rules('shipping_name', 'Shipping Name', 'trim');
-        $this->form_validation->set_rules('shipping_email', 'Shipping Email', 'trim|valid_email|is_unique[tbl_shipping.shipping_email]');
+        $this->form_validation->set_rules('shipping_email', 'Shipping Email', 'trim|valid_email');
         $this->form_validation->set_rules('shipping_address', 'Shipping Address', 'trim');
         $this->form_validation->set_rules('shipping_city', 'Shipping City', 'trim');
         $this->form_validation->set_rules('shipping_country', 'Shipping Country', 'trim');

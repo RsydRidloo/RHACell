@@ -41,11 +41,11 @@
                     </table>
                     <table style="float:right;text-align:left;" width="40%">
                         <tr>
-                            <th>Sub Total : </th>
+                            <th>Total Barang</th>
                             <td>Rp <?php echo $this->cart->format_number($this->cart->total()) ?></td>
                         </tr>
                         <tr>
-                            <th>VAT : </th>
+                            <th>Ongkir</th>
                             <td>Rp
                                 <?php
                                 $total = $this->cart->total();
@@ -55,7 +55,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <th>Grand Total :</th>
+                            <th>Total Biaya</th>
                             <td>Rp <?php echo $this->cart->format_number($tax + $this->cart->total()); ?> </td>
                         </tr>
                     </table>
