@@ -20,7 +20,7 @@
                 <span><input type="radio" name="payment" value="ssl" />Ovo</span><br />
                 <span><input type="radio" name="payment" value="paypal" />GoPay</span><br /><br />
                 <div class="search">
-                    <div><button class="grey">Buat Akun</button></div>
+                    <div><button class="grey">Bayar</button></div>
                 </div>
             </form>
 

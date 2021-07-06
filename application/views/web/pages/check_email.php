@@ -1,9 +1,7 @@
-
-
 <div class="main">
     <div class="content" style="text-align: center">
         <div class="register_account" style="text-align:center;display:inline-block;float: none">
-            <h3>Register New Account</h3>
+            <h3>Konfirmasi Pengiriman</h3>
             <form>
                 <table>
                     <tbody>
@@ -12,7 +10,7 @@
                                 <div>
                                     <input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {
                                                 this.value = 'Name';
-                                            }" >
+                                            }">
                                 </div>
 
                                 <div>
@@ -40,22 +38,17 @@
                                 </div>
                                 <div>
                                     <select id="country" name="country" onchange="change_country(this.value)" class="frm-field required">
-                                        <option value="null">Select a Country</option>         
-                                        <option value="AF">Afghanistan</option>
-                                        <option value="AL">Albania</option>
-                                        <option value="DZ">Algeria</option>
-                                        <option value="AR">Argentina</option>
-                                        <option value="AM">Armenia</option>
-                                        <option value="AW">Aruba</option>
-                                        <option value="AU">Australia</option>
-                                        <option value="AT">Austria</option>
-                                        <option value="AZ">Azerbaijan</option>
-                                        <option value="BS">Bahamas</option>
-                                        <option value="BH">Bahrain</option>
-                                        <option value="BD">Bangladesh</option>
+                                        <option value="null">Pilih kota</option>
+                                        <option value="AF">Tuban</option>
+                                        <option value="AL">Gresik</option>
+                                        <option value="DZ">Makassar</option>
+                                        <option value="AR">Surabaya</option>
+                                        <option value="AM">Lamongan</option>
+                                        <option value="AW">Nganjuk</option>
+                                        <option value="AU">Semarang</option>
 
                                     </select>
-                                </div>		        
+                                </div>
 
                                 <div>
                                     <input type="text" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {
@@ -69,13 +62,16 @@
                                             }">
                                 </div>
                             </td>
-                        </tr> 
-                    </tbody></table> 
-                <div class="search"><div><button class="grey">Create Account</button></div></div>
-                <p class="terms">By clicking 'Create Account' you agree to the <a href="#">Terms &amp; Conditions</a>.</p>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="search">
+                    <div><button class="grey">Konfirmasi pengiriman</button></div>
+                </div>
+
                 <div class="clear"></div>
             </form>
-        </div>  	
+        </div>
         <div class="clear"></div>
     </div>
 </div>
