@@ -214,7 +214,7 @@ class Web extends CI_Controller
             if ($result) {
                 $this->session->set_userdata('customer_id', $result->customer_id);
                 $this->session->set_userdata('customer_email', $data['customer_email']);
-                redirect('/');
+                redirect('/product');
             } else {
                 $this->session->set_flashdata('message', 'Customer Login Fail');
                 redirect('customer/login');
@@ -306,13 +306,13 @@ class Web extends CI_Controller
         $data['shipping_phone']   = $this->input->post('shipping_phone');
         $data['shipping_zipcode'] = $this->input->post('shipping_zipcode');
 
-        $this->form_validation->set_rules('shipping_name', 'Shipping Name', 'trim|required');
-        $this->form_validation->set_rules('shipping_email', 'Shipping Email', 'trim|required|valid_email|is_unique[tbl_shipping.shipping_email]');
-        $this->form_validation->set_rules('shipping_address', 'Shipping Address', 'trim|required');
-        $this->form_validation->set_rules('shipping_city', 'Shipping City', 'trim|required');
-        $this->form_validation->set_rules('shipping_country', 'Shipping Country', 'trim|required');
-        $this->form_validation->set_rules('shipping_phone', 'Shipping Phone', 'trim|required');
-        $this->form_validation->set_rules('shipping_zipcode', 'Shipping Zipcode', 'trim|required');
+        $this->form_validation->set_rules('shipping_name', 'Shipping Name', 'trim');
+        $this->form_validation->set_rules('shipping_email', 'Shipping Email', 'trim|valid_email|is_unique[tbl_shipping.shipping_email]');
+        $this->form_validation->set_rules('shipping_address', 'Shipping Address', 'trim');
+        $this->form_validation->set_rules('shipping_city', 'Shipping City', 'trim');
+        $this->form_validation->set_rules('shipping_country', 'Shipping Country', 'trim');
+        $this->form_validation->set_rules('shipping_phone', 'Shipping Phone', 'trim');
+        $this->form_validation->set_rules('shipping_zipcode', 'Shipping Zipcode', 'trim');
 
         if ($this->form_validation->run() == true) {
             $result = $this->web_model->save_shipping_address($data);
@@ -378,10 +378,8 @@ class Web extends CI_Controller
             }
 
             if ($payment_method == 'paypal') {
-
             }
             if ($payment_method == 'cashon') {
-
             }
 
             $this->cart->destroy();
@@ -442,5 +440,4 @@ class Web extends CI_Controller
         $this->session->unset_userdata('customer_email');
         redirect('customer/login');
     }
-
 }
